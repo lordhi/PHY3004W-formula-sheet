@@ -26,7 +26,8 @@
 
 \begin{align*}
     \vec{S} =& \frac{1}{\mu} \vec{E} \times \vec{B} \\
-    I =& \langle S \rangle = \frac{1}{2} v\epsilon E_{0}^{2}
+    I =& \langle S \rangle = \frac{1}{2} v\epsilon E_{0}^{2} \\
+    P =& \int \vec{S} \cdot \mathrm{d}\vec{a}
 \end{align*}
 
 \subsection{Special Relativity}
@@ -112,8 +113,33 @@
     \frac{J^{\prime}(x^{0} - |\vec{x} - \vec{x}^{\prime}, \vec{x}^{\prime})}{|\vec{x} - \vec{x}^{\prime}|}
 \end{equation*}
 
+
+\subsection{Radiation}
+
 \begin{align*}
     \vec{E} &= \frac{q}{4\pi \epsilon}
     \Bigl(\frac{\hat{\vec{r}} - \vec{\beta}}{\gamma^{2} (1 - \vec{\beta}\cdot\hat{\vec{r}})^{3} |\vec{r}|^{2}} \\
         &+\frac{\hat{\vec{r}} \times ((\hat{\vec{r}} - \vec{\beta}) \times \dot{\vec{\beta}})}{(1- \vec{\beta}\cdot\hat{\vec{r}})^{3}c|\vec{r}|}\Bigr) \comment{for point charge}
 \end{align*}
+
+\begin{equation*}
+    \vec{E} = \frac{q}{4\pi\epsilon_{0}} \frac{\hat{\vec{r}} - \vec{\beta}}{\gamma^{2} (1-\vec{\beta}\cdot\hat{\vec{r}})^{3}|\vec{r}|^{2}} \comment{constant velocity}
+\end{equation*}
+
+\begin{equation*}
+    \d{P}{\Omega} = \frac{\mu_{0} q^{2}}{16\pi c}
+    \frac{(\hat{\vec{r}} \times ((\hat{\vec{r}} - \vec{\beta}) \times \vec{a}))^{2}}
+    {(1 - \vec{\beta} \cdot \hat{\vec{r}})^{5}}
+\end{equation*}
+
+\begin{align*}
+    \d{P}{\Omega} = \frac{\mu_{0} q^{2} a^{2}}{16 \pi^{2}c} \sin^{2}\theta \comment{non-rel. limit} \\
+    P = \frac{\mu_{0} q^{2} a^{2}}{6 \pi c}
+\end{align*}
+
+\begin{equation*}
+    P = \frac{\mu_{0} q^{2} \gamma^{2}}{6 \pi c} (a^{2} - |\vec{\beta} \times \vec{a}|^{2}) \comment{rel. generalisation}
+\end{equation*}
+
+todo Maybe do dipole stuff?
+
