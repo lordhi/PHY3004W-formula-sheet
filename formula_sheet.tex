@@ -1,9 +1,8 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, twocolumn]{article}
 \usepackage{import}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{multicol}
 \usepackage{fullpage}
 
 \numberwithin{equation}{section}
@@ -18,7 +17,7 @@
 \newcommand{\grad}[1]{\nabla#1} % for gradient
 \let\divsymb=\div % rename builtin command \div to \divsymb
 \renewcommand{\div}[1]{\nabla\cdot#1} % for divergence
-\newcommand{\curl}[1]{\nabla\times#1} % for curl
+\newcommand{\curl}[1]{\nabla \times #1} % for curl
 
 \renewcommand{\d}[2]{\frac{\mathrm{d} #1}{\mathrm{d} #2}} % for derivatives
 \newcommand{\dd}[2]{\frac{\mathrm{d}^2 #1}{\mathrm{d} #2^2}} % for double derivatives
@@ -28,8 +27,9 @@
 
 \newcommand{\closedintegral}[2]{\oint #1 \cdot \mathrm{d}#2}
 
-\renewcommand{\vec}[1]{\mathbf{#1}}
-\newcommand{\comment}[1]{\quad\text{{\small(#1)}}}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+%\newcommand{\comment}[1]{\quad\text{{\small(#1)}}}
+\newcommand{\comment}[1]{\tag{\small#1}}
 
 \title{PHY3004W Formula Sheet}
 \author{Alex Veltman}
@@ -37,8 +37,6 @@
 
 \begin{document}
 \maketitle
-
-\begin{multicols*}{2}
 
 \section{Electromagnetism}
 \import{./}{EM.tex}
@@ -53,7 +51,5 @@
 \section{Particle Physics}
 
 \section{Solid State Physics}
-
-\end{multicols*}
 
 \end{document}
