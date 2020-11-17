@@ -1,0 +1,87 @@
+\begin{align}
+    \div{\vec{D}} =& \rho_{f} \\
+    \div{\vec{B}} =& 0 \\
+    \curl{\vec{E}} =& \pd{\vec{B}}{t} \\
+    \curl{\vec{H}} =& \vec{J}_{f} + \pd{\vec{D}}{t}
+\end{align}
+
+\begin{align}
+    \vec{D} =& \epsilon_{0}\vec{E} + \vec{P} \\
+    \vec{B} =& \mu_{0}(\vec{H} + \vec{M})
+\end{align}
+
+\begin{align}
+    \closedintegral{\vec{D}}{\vec{a}} =& Q_{f,enc} \\
+    \closedintegral{\vec{H}}{\vec{l}} =& I_{f,enc}(t) + \d{\Phi_{\vec{D}}}{t} \\
+    \closedintegral{\vec{B}}{\vec{a}} =& 0\\
+    \closedintegral{\vec{E}}{\vec{l}} =& - \d{\Phi_{\vec{B}}}{t}
+\end{align}
+
+\begin{align}
+    D_{1}^{\perp} - D_{2}^{\perp} &= \sigma_{f} \\
+    B_{1}^{\perp} - B_{2}^{\perp} &= 0 \\
+    \vec{E}_{1}^{\parallel} - D_{2}^{\parallel} &= 0 \\
+    \vec{H}_{1}^{\parallel} - \vec{H}_{2}^{\parallel} &= \vec{K}_f \times \hat{\vec{n}}
+\end{align}
+
+\begin{align}
+    \vec{S} =& \frac{1}{\mu} \vec{E} \times \vec{B} \\
+    I =& \langle S \rangle = \frac{1}{2} v\epsilon E_{0}^{2}
+\end{align}
+
+\subsection{Special Relativity}
+\begin{equation}
+    \Lambda =
+    \begin{pmatrix}
+        \gamma & -\beta\gamma & 0 & 0 \\
+        -\beta\gamma & \gamma & 0 & 0 \\
+        0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1
+    \end{pmatrix}
+\end{equation}
+
+\begin{equation}
+    u^{\prime} = \frac{u - v}{1 - \frac{uv}{c^{2}}}
+\end{equation}
+
+\begin{equation}
+    \Lambda^{\mu}_{\alpha} g_{\mu\nu} \Lambda^{\nu}_{\beta} = g_{\alpha\beta}
+\end{equation}
+
+\begin{equation}
+    I = s^{2} = x_{\mu}x^{\mu} = c^{2}t^{2} - d^{2}
+\end{equation}
+
+\begin{align}
+    \mathrm{d}\tau &= \frac{\mathrm{d}t}{\gamma} \comment{proper time} \\
+    \eta^{\mu} &= \d{x^{\mu}}{\tau} =
+    \begin{pmatrix}
+        \gamma c \\
+        \gamma \vec{u}
+    \end{pmatrix}\comment{proper velocity} \\
+    \eta^{\mu} &= m\eta^{\mu} =
+    \begin{pmatrix}
+        E/c \\
+        \vec{p}
+    \end{pmatrix}\comment{proper velocity}
+\end{align}
+
+\begin{align}
+    \eta_{\mu}\eta^{\mu} &= c^{2} \\
+    p_{\mu}p^{\mu} &= E^{2}/c^{2} - \vec{p}^{2} = m^{2}c^{2}\\
+\end{align}
+
+\begin{equation}
+    F^{\mu\nu} =
+    \begin{pmatrix}
+        0 & -E_{x}/c & -E_{y}/c & -E_{z}/c \\
+        E_{x}/c & 0 & -B_{z} & B_{y} \\
+        E_{y}/c & B_{z} & 0 & -B_{x} \\
+        E_{z}/c & -B_{y} & B_{x} & 0
+    \end{pmatrix}
+\end{equation}
+
+
+\begin{equation}
+    K^{\mu} = q F^{\mu\nu} g_{\nu\alpha} \eta^{\alpha}
+\end{equation}
