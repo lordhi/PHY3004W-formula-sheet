@@ -1,0 +1,49 @@
+\begin{equation}
+    s = (p_{A} + p_{B})^{2}
+\end{equation}
+
+\begin{center}
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$X^{\pm}$] -- [fermion] b -- [photon] c [particle=$\gamma$],
+        b  -- [fermion] d [particle=$X^{\pm}$],
+    };
+\end{center}
+
+\subsection{Weak Force}
+
+\begin{center}
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$f$] -- [fermion] b -- [boson] c [particle=$Z$],
+        b  -- [fermion] d [particle=$f$],
+    };
+
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$\ell^{-}$] -- [fermion] b -- [boson] c [particle=$W^{-}$],
+        b  -- [fermion] d [particle=$\nu_{\ell}$],
+    };
+
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$q^{-\frac{1}{3}}$] -- [fermion] b -- [boson] c [particle=$W^{-}$],
+        b  -- [fermion] d [particle=$q^{+\frac{2}{3}}$],
+    };
+\end{center}
+
+\subsection{Strong Force}
+
+\begin{center}
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$q$] -- [fermion] b -- [gluon] c [particle=$g$],
+        b  -- [fermion] d [particle=$q$],
+    };
+
+    \feynmandiagram[vertical=b to c] {
+        a [particle=$g$] -- [gluon] b -- [gluon] c [particle=$g$],
+        b  -- [gluon] d [particle=$g$],
+    };
+
+
+    \feynmandiagram[vertical=a to b] {
+        a [particle=$g$] -- [gluon] c -- [gluon] d [particle=$g$],
+        b [particle=$g$]  -- [gluon] c  -- [gluon] e [particle=$g$],
+    };
+\end{center}
