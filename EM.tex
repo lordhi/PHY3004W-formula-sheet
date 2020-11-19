@@ -20,12 +20,13 @@
 \begin{align*}
     D_{1}^{\perp} - D_{2}^{\perp} &= \sigma_{f} \\
     B_{1}^{\perp} - B_{2}^{\perp} &= 0 \\
-    \vec{E}_{1}^{\parallel} - D_{2}^{\parallel} &= 0 \\
+    \vec{E}_{1}^{\parallel} - \vec{E}_{2}^{\parallel} &= 0 \\
     \vec{H}_{1}^{\parallel} - \vec{H}_{2}^{\parallel} &= \vec{K}_f \times \hat{\vec{n}}
 \end{align*}
 
 \begin{align*}
     \vec{S} =& \frac{1}{\mu} \vec{E} \times \vec{B} \\
+    u =& \frac{1}{2} \left( \epsilon_0 E^{2} + \frac{1}{\mu_0} B^{2} \right) \\
     I =& \langle S \rangle = \frac{1}{2} v\epsilon E_{0}^{2} \\
     P =& \int \vec{S} \cdot \mathrm{d}\vec{a}
 \end{align*}
@@ -82,7 +83,6 @@
     \end{pmatrix}
 \end{equation*}
 
-
 \begin{equation*}
     K^{\mu} = q F^{\mu\nu} g_{\nu\alpha} \eta^{\alpha}
 \end{equation*}
@@ -113,7 +113,6 @@
     \frac{J^{\prime}(x^{0} - |\vec{x} - \vec{x}^{\prime}, \vec{x}^{\prime})}{|\vec{x} - \vec{x}^{\prime}|}
 \end{equation*}
 
-
 \subsection{Radiation}
 
 \begin{align*}
@@ -142,4 +141,8 @@
 \end{equation*}
 
 todo Maybe do dipole stuff?
+\subsection{Radiation of dipole}
+\begin{equation}
+    \vec{p}(t) = e^{-i \omega t}\int \rho{\vec{x}^{\prime}} \vec{x}^{\prime} \mathrm{d}^{3}x^{\prime} \comment{dipole moment}
+\end{equation}
 
